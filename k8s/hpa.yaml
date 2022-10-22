@@ -7,8 +7,8 @@ spec:
     apiVersion: apps/v1
     kind: Deployment
     name: web
-  minReplicas: 4
-  maxReplicas: 7
+  minReplicas: 1
+  maxReplicas: 1
   metrics:
   - type: Resource
     resource:
@@ -28,7 +28,7 @@ spec:
     kind: Deployment
     name: postgres
   minReplicas: 1
-  maxReplicas: 3
+  maxReplicas: 1
   metrics:
   - type: Resource
     resource:
